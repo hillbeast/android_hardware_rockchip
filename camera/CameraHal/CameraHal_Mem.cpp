@@ -574,7 +574,8 @@ int IonDmaMemManager::createIonBuffer(struct bufferinfo_s* ionbuf)
         }
         
         if((!mIommuEnabled) || (!ionbuf->mIsForceIommuBuf)){
-            ret=ion_get_phys(client_fd,handle,&(tmpalloc->phy_addr));
+            // FIXME: ret=ion_get_phys(client_fd,handle,&(tmpalloc->phy_addr));
+		ret = 0;
 			if(ret<0)
 				LOGE("ion_get_phys failed\n");
         }else{

@@ -1204,15 +1204,16 @@ int CameraSOCAdapter::cameraAutoFocus(bool auto_trig_only)
     	goto cameraAutoFocus_end;
     }
 
-	extCtrInfo.rect[0] = 0;
+/*FIXME:
+    extCtrInfo.rect[0] = 0;
     extCtrInfo.rect[1] = 0;
     extCtrInfo.rect[2] = 0;
-    extCtrInfo.rect[3] = 0;   
+    extCtrInfo.rect[3] = 0;   */
     if (m_focus_mode == V4L2_CID_FOCUS_AUTO) {
-			extCtrInfo.rect[0] = m_taf_roi[0];
+/*FIXME:		extCtrInfo.rect[0] = m_taf_roi[0];
 			extCtrInfo.rect[1] = m_taf_roi[1];
 			extCtrInfo.rect[2] = m_taf_roi[2];
-		    extCtrInfo.rect[3] = m_taf_roi[3];
+			extCtrInfo.rect[3] = m_taf_roi[3]; */
 		    if (auto_trig_only) {
 		    	//m_focus_value = 2;
 		    	err = true;

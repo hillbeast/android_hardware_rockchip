@@ -26,6 +26,7 @@
 #include "../libgralloc/gralloc_priv.h"
 #endif
 
+#include <hardware/rk_hwcomposer.h>
 #include "../jpeghw/release/encode_release/rk29-ipp.h"
 #include <utils/CallStack.h> 
 

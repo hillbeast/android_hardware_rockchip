@@ -31,19 +31,20 @@ LOCAL_SRC_FILES:=\
   
 ifeq ($(strip $(TARGET_BOARD_HARDWARE)),rk30board)	 
 LOCAL_C_INCLUDES += \
-	frameworks/base/include/ui \
-  external/jpeg \
-  external/jhead\
-  hardware/rockchip/hwcomposer\
-	hardware/rockchip/libgralloc_ump/ump/include\
-	hardware/rockchip/librkvpu\
-  $(LOCAL_PATH)/../SiliconImage/include\
-  $(LOCAL_PATH)/../SiliconImage/include/isp_cam_api\
-  bionic\
-  external/tinyxml2\
-  system/media/camera/include\
-  system/core/libion/include/ion\
-  system/core/libion/kernel-headers/linux
+    frameworks/base/include/ui \
+    external/jpeg \
+    external/jhead\
+    hardware/rockchip/hwcomposer\
+    hardware/rockchip/libgralloc_ump/ump/include\
+    hardware/rockchip/libgralloc\
+    hardware/rockchip/librkvpu\
+    $(LOCAL_PATH)/../SiliconImage/include\
+    $(LOCAL_PATH)/../SiliconImage/include/isp_cam_api\
+    bionic\
+    external/tinyxml2\
+    system/media/camera/include\
+    system/core/libion/include/ion\
+    system/core/libion/kernel-headers/linux
 
 #has no "external/stlport" from Android 6.0 on                         
 ifeq (1,$(strip $(shell expr $(PLATFORM_VERSION) \< 6.0)))

@@ -589,8 +589,8 @@ static int alloc_device_alloc(alloc_device_t* dev, int w, int h, int format, int
 				 * and must fill the variables pixel_stride, byte_stride and size.
 				 */
             case HAL_PIXEL_FORMAT_YCrCb_NV12:
-            case HAL_PIXEL_FORMAT_YCrCb_NV12_10:
-            case HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO:
+// FIXME:           case HAL_PIXEL_FORMAT_YCrCb_NV12_10:
+// FIXME:           case HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO:
                 if (!get_yv12_stride_and_size(w, h, &pixel_stride, &byte_stride, &size, type))
                 {
                     E("err.");

@@ -420,4 +420,9 @@ struct private_handle_t
 #endif
 };
 
+#define HAL_PIXEL_FORMAT_YCrCb_NV12       0x20
+#define HAL_PIXEL_FORMAT_YCrCb_NV12_OLD   0x20
+#define HAL_PIXEL_FORMAT_YCrCb_NV12_VIDEO 0x22
+#define HAL_PIXEL_FORMAT_YCrCb_NV12_10    0x22
+
 #endif /* GRALLOC_PRIV_H_ */

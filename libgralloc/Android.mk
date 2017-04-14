@@ -84,6 +84,8 @@ LOCAL_C_INCLUDES := $(MALI_LOCAL_PATH) $(MALI_DDK_INCLUDES) system/core/include
 LOCAL_C_INCLUDES += \
         system/core/libion/include \
         system/core/libion/kernel-headers
+#FIXME:	hardware/rockchip/hwcomposer \
+#	hardware/libhardware/include
 LOCAL_CFLAGS := -DLOG_TAG=\"gralloc\"  -DMALI_ION=$(MALI_ION) -DMALI_AFBC_GRALLOC=$(MALI_AFBC_GRALLOC) -D$(GRALLOC_DEPTH) -DMALI_ARCHITECTURE_UTGARD=$(MALI_ARCHITECTURE_UTGARD) -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION) -DDISABLE_FRAMEBUFFER_HAL=$(DISABLE_FRAMEBUFFER_HAL)
 #-DSTANDARD_LINUX_SCREEN 
 
